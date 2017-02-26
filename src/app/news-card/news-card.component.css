@@ -1,0 +1,13 @@
+mdl-card-title>h2 {
+    weight: 800;
+}
+
+mdl-title {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+mdl-card {
+    width: 300px;
+    height: 300px;
+}

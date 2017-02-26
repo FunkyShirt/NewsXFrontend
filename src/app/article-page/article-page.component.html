@@ -1,0 +1,26 @@
+<div class="title">
+    <h1>
+        {{title}}
+    </h1>
+    <h4>
+        {{metaDescription}}
+    </h4>
+</div>
+<div class="content">
+    <div
+        class="paragraph"
+        *ngFor="let paragraph of paragraphs; let i = index">
+        <div
+            class="content"
+            [innerHTML]="paragraph"
+            [popover]="pp">
+        </div>
+        <popover-content
+            #pp
+            title="Popover Title"
+            placement="left"
+            [animation]="true"
+            [closeOnClickOutside]="true">
+        </popover-content>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+:host{
+    width: 1000;
+}
+.container{
+    margin: auto;
+}
+.container > news-card{
+    display: inline-block;
+    margin: auto;
+}
+

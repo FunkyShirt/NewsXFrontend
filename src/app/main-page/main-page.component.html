@@ -1,0 +1,13 @@
+<div class="container mdl-grid">
+    <div
+        class="mdl-cell mdl-cell--4-col"
+        *ngFor="let article of articles">
+        <news-card
+            [title]="article.title"
+            [metaDescription]="article.description"
+            [metaImage]="article.metaImage">
+        </news-card>
+    </div>
+
+
+</div>
