@@ -1,3 +1,6 @@
+:host{
+    display: inline-block;
+}
 mdl-card-title>h2 {
     weight: 800;
 }

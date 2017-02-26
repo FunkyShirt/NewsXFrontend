@@ -1,13 +1,15 @@
 <div class="container mdl-grid">
     <div
         class="mdl-cell mdl-cell--4-col"
-        *ngFor="let article of articles">
+        *ngFor="let article of articles; let i = index"
+        (click)="startcard($event, i)">
         <news-card
+            [class.show]="visible"
+            [class.hide]="!visible"
             [title]="article.title"
             [metaDescription]="article.description"
-            [metaImage]="article.metaImage">
+            [metaImage]="article.metaImage"
+            [style.transition-delay]="(i*0.1)+'s'">
         </news-card>
     </div>
-
-
 </div>

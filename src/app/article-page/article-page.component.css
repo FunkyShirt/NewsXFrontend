@@ -1,3 +1,18 @@
+host{
+    position: absolute;
+    transition-property: transform opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+host.show{
+    opacity: 1;
+    transform: scaleY(0);
+}
+host.hide{
+    opacity: 0;
+    transform: scaleY(100vh);
+}
+
 .paragraph{
     margin: 10px 20%;
 }

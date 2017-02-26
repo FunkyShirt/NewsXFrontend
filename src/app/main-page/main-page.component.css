@@ -1,11 +1,21 @@
 :host{
     width: 1000;
+    display: relative;
+    position: absolute;
 }
 .container{
     margin: auto;
 }
-.container > news-card{
-    display: inline-block;
-    margin: auto;
+news-card{
+    transition-property: transform opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
 }
-
+host.hide > news-card{
+    transform: translateX(-50vw);
+    opacity: 0;
+}
+host.show > news-card{
+    transform: translateX(0);
+    opacity: 1.0;
+}
