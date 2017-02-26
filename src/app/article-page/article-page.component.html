@@ -11,16 +11,23 @@
         class="paragraph"
         *ngFor="let paragraph of paragraphs; let i = index">
         <div
-            class="content"
+            class="content inline-trigger"
             [innerHTML]="paragraph"
-            [popover]="pp">
+            [popover]="myPopover"
+            >
         </div>
-        <popover-content
-            #pp
-            title="Popover Title"
+
+        <popover-content #myPopover
+            title="title"
             placement="left"
             [animation]="true"
             [closeOnClickOutside]="true">
+            <div>
+                <button (click)="handleClick($event, i)">
+                    CrossView
+                </button>
+            </div>
         </popover-content>
+
     </div>
 </div>

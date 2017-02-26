@@ -1,3 +1,4 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
 host{
     position: absolute;
     transition-property: transform opacity;
@@ -26,4 +27,12 @@ host.hide{
 }
 .title > h4 {
     text-align: right;
+}
+ngb-popover-window{
+    animation-name: popup;
+    animation-duration: 0.5s;
+}
+@keyframes popup{
+    0% {opacity: 0%};
+    100% {opacity: 100%};
 }
