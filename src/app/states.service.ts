@@ -14,10 +14,10 @@ export class StatesService {
 
   constructor() { }
   addPage(name: string, page: PageComponent) {
-      pages[name] = page;
+      this.pages[name] = page;
   }
   tranition(name: string, data: any){
-      _.forEach(pages, (p:PageComponent, n)=>{
+      _.forEach(this.pages, (p, n)=>{
           if (name != n) {
               p.hide();
           } else {
