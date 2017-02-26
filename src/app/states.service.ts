@@ -12,7 +12,9 @@ export interface PageComponent {
 export class StatesService {
   pages: { [id: string]: PageComponent };
 
-  constructor() { }
+  constructor() {
+    this.pages = {};
+  }
   addPage(name: string, page: PageComponent) {
       this.pages[name] = page;
   }
